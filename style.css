@@ -66,6 +66,17 @@ textarea {
   resize: vertical;
 }
 
+.input-notes {
+  margin-top: 10px;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.input-notes p {
+  margin: 2px 0;
+}
+
 button {
   width: 100%;
   margin-top: 16px;
@@ -216,6 +227,11 @@ button {
 
   textarea {
     min-height: 100px;
+  }
+
+  .input-notes {
+    font-size: 12px;
+    line-height: 1.7;
   }
 
   .input-area {
