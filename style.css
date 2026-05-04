@@ -46,7 +46,7 @@ h1 {
 .input-area {
   background: #fff;
   padding: 20px;
-  border-radius: 18px;
+  border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
@@ -62,7 +62,7 @@ textarea {
   padding: 14px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 12px;
+  border-radius: 8px;
   resize: vertical;
 }
 
@@ -75,7 +75,7 @@ button {
   color: #fff;
   background: #222;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -96,7 +96,7 @@ button:hover {
   background: #fff;
   padding: 18px;
   margin-bottom: 16px;
-  border-radius: 18px;
+  border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
@@ -114,6 +114,14 @@ button:hover {
 .card small {
   display: block;
   color: #666;
+}
+
+.category-card {
+  border-left: 6px solid #f2c94c;
+}
+
+.category-card p {
+  color: #111;
 }
 
 .note {
@@ -137,7 +145,7 @@ button:hover {
 
   .input-area,
   .card {
-    border-radius: 14px;
+    border-radius: 8px;
   }
 }
 .copyButton {
@@ -221,5 +229,12 @@ button {
   .exampleButton {
     font-size: 12px;
     padding: 7px 10px;
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .copyButton {
+    width: 100%;
   }
 }

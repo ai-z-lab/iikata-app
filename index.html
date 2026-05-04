@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>その言い方、損してない？変換App</title>
-<link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -32,10 +32,20 @@
     <p>例文を選ぶ</p>
     <div class="example-buttons">
       <button type="button" class="exampleButton">なんでまだ終わってないの？</button>
+      <button type="button" class="exampleButton">進捗どうなってる？</button>
+      <button type="button" class="exampleButton">まだ終わってへんの？</button>
+      <button type="button" class="exampleButton">終わっとらんやん</button>
       <button type="button" class="exampleButton">それ前にも言ったよね？</button>
+      <button type="button" class="exampleButton">前も言ったやん</button>
+      <button type="button" class="exampleButton">前に説明しとるよね？</button>
       <button type="button" class="exampleButton">ちゃんとして</button>
+      <button type="button" class="exampleButton">ちゃんとせえ</button>
+      <button type="button" class="exampleButton">早くやって</button>
       <button type="button" class="exampleButton">やる気あるの？</button>
+      <button type="button" class="exampleButton">ちゃんとやる気あるん？</button>
       <button type="button" class="exampleButton">普通わかるでしょ？</button>
+      <button type="button" class="exampleButton">これくらいわからん？</button>
+      <button type="button" class="exampleButton">常識やろ</button>
     </div>
   </div>
 
@@ -44,6 +54,12 @@
 
     <section id="resultArea" class="result-area hidden">
       <h2>変換結果</h2>
+
+     <div class="card category-card">
+  <h3>判定カテゴリ</h3>
+  <p id="categoryText"></p>
+  <small id="categoryReason"></small>
+</div>
 
      <div class="card">
   <h3>やわらかい言い方</h3>
