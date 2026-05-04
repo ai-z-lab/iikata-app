@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>その言い方、損してない？変換App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <p class="badge">40代の仕事・人間関係に</p>
+      <h1>その言い方、<br />損してない？変換App</h1>
+      <p class="lead">
+        きつく聞こえがちな言葉を、相手に伝わりやすい言い方へ変換します。
+      </p>
+    </section>
+
+   <section class="input-area">
+  <label for="userInput">変換したい言葉</label>
+
+  <textarea
+    id="userInput"
+    placeholder="例：なんでまだ終わってないの？"
+  ></textarea>
+
+  <div class="example-area">
+    <p>例文を選ぶ</p>
+    <div class="example-buttons">
+      <button type="button" class="exampleButton">なんでまだ終わってないの？</button>
+      <button type="button" class="exampleButton">それ前にも言ったよね？</button>
+      <button type="button" class="exampleButton">ちゃんとして</button>
+      <button type="button" class="exampleButton">やる気あるの？</button>
+      <button type="button" class="exampleButton">普通わかるでしょ？</button>
+    </div>
+  </div>
+
+  <button id="convertButton">変換する</button>
+</section>
+
+    <section id="resultArea" class="result-area hidden">
+      <h2>変換結果</h2>
+
+     <div class="card">
+  <h3>やわらかい言い方</h3>
+  <p id="softText"></p>
+  <small id="softReason"></small>
+  <button class="copyButton" data-target="softText">コピーする</button>
+</div>
+
+<div class="card">
+  <h3>ビジネス向け</h3>
+  <p id="businessText"></p>
+  <small id="businessReason"></small>
+  <button class="copyButton" data-target="businessText">コピーする</button>
+</div>
+
+<div class="card">
+  <h3>若手向け</h3>
+  <p id="youngText"></p>
+  <small id="youngReason"></small>
+  <button class="copyButton" data-target="youngText">コピーする</button>
+</div>
+
+    </section>
+
+    <p class="note">
+      ※このツールは、伝え方を考えるための補助です。実際の相手や状況に合わせて調整してください。
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
